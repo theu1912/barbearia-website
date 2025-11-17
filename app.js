@@ -1,4 +1,4 @@
-// Dados da Barbearia
+// parte da Barbearia
 const barbearia = {
     nome: "Barbearia Premium",
     telefone: "(41) 98765-4321",
@@ -30,7 +30,7 @@ const depoimentos = [
 let currentSection = "home";
 let agendamentos = JSON.parse(localStorage.getItem("agendamentos")) || [];
 
-// Inicializar aplicação
+// Inicialização aplicação
 document.addEventListener("DOMContentLoaded", () => {
     renderApp();
 });
@@ -42,7 +42,7 @@ function renderApp() {
     attachEventListeners();
 }
 
-// HTML da aplicação
+// HTML aplicação
 function getAppHTML() {
     return `
         <header>
@@ -72,7 +72,7 @@ function getAppHTML() {
     `;
 }
 
-// Obter HTML da seção atual
+// recebe HTML da seção atual
 function getSectionHTML() {
     switch (currentSection) {
         case "services":
