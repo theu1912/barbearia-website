@@ -45,7 +45,7 @@ function showAdminPanel() {
     document.getElementById("adminPanel").style.display = "block";
 }
 
-// Configurar event listeners
+// Configuração event listeners
 function setupEventListeners() {
     const loginForm = document.getElementById("loginForm");
     if (loginForm) {
@@ -63,7 +63,7 @@ function setupEventListeners() {
     }
 }
 
-// Lidar com login
+// parte do login
 function handleLogin(e) {
     e.preventDefault();
     const username = document.getElementById("username").value;
